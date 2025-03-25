@@ -1,4 +1,5 @@
 import jwtAuth from "./routes/jwtAuth.js";
+import signals from "./routes/signals.js";
 
 import express from "express";
 import cors from "cors";
@@ -21,7 +22,7 @@ app.get('/', (req, res) => {
 app.use("/auth", jwtAuth);
 
 //get all signals
-app.use("/auth", sigals);
+app.use("/auth", signals);
 
 
 const PORT = process.env.PORT || 3000;
